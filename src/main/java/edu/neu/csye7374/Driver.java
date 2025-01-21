@@ -13,6 +13,14 @@ public class Driver {
         StockAPI growthStock = new GrowthStock("AAPL", 150.00, "Apple Inc. Growth Stock");
         StockAPI valueStock = new ValueStock("MSFT", 250.00, "Microsoft Corp. Value Stock");
 
+        System.out.println("Initial State of Growth Stock:");
+        System.out.println(growthStock);
+        System.out.println("Initial Metric: " + growthStock.getMetric() + "\n");
+
+        System.out.println("Initial State of Value Stock:");
+        System.out.println(valueStock);
+        System.out.println("Initial Metric: " + valueStock.getMetric() + "\n");
+
         // 6 bids for each stock
         String[] bidsForGrowth = {"155.00", "160.00", "158.00", "162.00", "165.00", "170.00"};
         String[] bidsForValue = {"248.00", "249.50", "250.50", "251.00", "252.50", "253.00"};
